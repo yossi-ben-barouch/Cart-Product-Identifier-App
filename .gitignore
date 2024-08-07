@@ -1,0 +1,26 @@
+# React Native
+node_modules/
+.buckconfig
+.flowconfig
+.watchmanconfig
+
+# IntelliJ
+.idea/
+*.iml
+
+# Xcode
+ios/Pods
+ios/build/
+ios/Cart_Product_Identifier_React_FrontEnd.xcworkspace
+ios/*.xcodeproj/xcuserdata
+ios/*.xcodeproj/project.xcworkspace
+
+# Android
+android/.gradle
+android/app/build
+android/app/release
+
+# Misc
+*.log
+*.swp
+*.swo
