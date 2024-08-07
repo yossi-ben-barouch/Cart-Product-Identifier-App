@@ -1,7 +1,8 @@
 import * as FileSystem from "expo-file-system";
 import { Platform } from "react-native";
 
-export const uploadPicture = async (imageUri) => {
+
+export const uploadPicture = async (imageUri, apiUrl) => {
     try {
         const fileBlob = await FileSystem.readAsStringAsync(imageUri, {
             encoding: FileSystem.EncodingType.Base64,

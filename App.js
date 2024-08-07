@@ -7,6 +7,8 @@ import { styles } from './AppStyles.js';
 
 export default function App() {
 
+    const API_URL = "insert_API_URL_HERE";
+
     const initialFoods = [
         { food: "Oranges", price: "0.50" },
         { food: "Bananas", price: "0.25" },
@@ -109,7 +111,7 @@ export default function App() {
                 const photo = await cameraRef.current.takePictureAsync();
                 setShowCamera(false);
                 setPictureUri(photo.uri);
-                const result = await uploadPicture(photo.uri);
+                const result = await uploadPicture(photo.uri, API_URL);
                 if (result.food === "unknown" || result.price === "unknown") {
                     return;
                 }
